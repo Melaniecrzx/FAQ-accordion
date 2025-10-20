@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    --purple-950: hsl(292, 42%, 14%);
+    --purple-600: hsl(292, 16%, 49%);
+    --purple-100: hsl(275, 100%, 97%);
+    --violet: #AD28EB;
+  }
+  
+  * {
+    font-family: 'WorkSans', sans-serif;
+  }
+}
+
+@layer components {
+  .text-heading-desktop {
+    @apply text-[56px] leading-[66px] font-bold font-['Work_Sans'];
+  }
+  
+  .text-heading-mobile {
+    @apply text-[32px] leading-[38px] font-bold font-['Work_Sans'];
+  }
+  
+  .text-subtitle-desktop {
+    @apply text-[18px] leading-[21px] font-semibold font-['Work_Sans'];
+  }
+  .text-subtitle-mobile {
+    @apply text-[16px] leading-[19px] font-semibold font-['Work_Sans'];
+  }
+  
+  .text-body-desktop {
+    @apply text-[16px] leading-[19px] font-normal font-['Work_Sans'];
+  }
+  .text-body-mobile {
+    @apply text-[14px] leading-[1.5] font-normal font-['Work_Sans'];
+  }
+  
+}

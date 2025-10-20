@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ accordion</title>
+    <link href="dist/styles.css" rel="stylesheet">
+    <link
+10      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+11      rel="stylesheet"
+12    />
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-[var(--purple-100)] flex flex-col min-h-screen justify-center items-center">
+    <picture class="absolute top-0 left-0 w-full z-0">
+        <source media="(max-width: 767px)" srcset="assets/images/background-pattern-mobile.svg">
+        <img class="w-full h-full object-cover object-top" src="assets/images/background-pattern-desktop.svg" alt="Illustration">
+    </picture>
+    <main class="bg-white flex flex-col gap-6 md:gap-8 p-6 md:p-10 relative z-10 p-6 md:p-10 max-w-[327px] md:max-w-[600px] w-full my-[130px] md:my-[167px] rounded-lg md:rounded-2xl shadow-[0_32px_56px_0_rgba(80,0,118,0.1)]">
+        <header class="flex gap-6">
+            <img class="w-6 md:w-10" src="assets/images/icon-star.svg" alt="icon star">
+            <h1 class="text-[var(--purple-950)] text-heading-mobile md:text-heading-desktop">FAQs</h1>
+        </header>
+        <section class="flex flex-col" id="section-one"> 
+            <button class="flex justify-between items-center cursor-pointer">
+                <h2 class="text-left text-[var(--purple-950)] text-subtitle-mobile md:text-subtitle-desktop hover:text-[var(--violet)]">What is Frontend Mentor, and how will it help me?</h2>
+                <img class="plus" src="assets/images/icon-plus.svg" alt="icon plus">
+                <img class="hidden minus" src="assets/images/icon-minus.svg" alt="icon minus">                
+            </button>
+            <div class="grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
+                <p class="text-[var(--purple-600)] text-body-mobile md:text-body-desktop overflow-hidden">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It’s suitable for all levels and ideal for portfolio building.</p>
+            </div>
+        </section>
+        <hr class="border-0 h-px bg-[var(--purple-100)]">
+        <section class="flex flex-col " id="section-two">
+            <button class="flex justify-between items-center cursor-pointer">
+                <h2 class="text-left text-[var(--purple-950)] text-subtitle-mobile md:text-subtitle-desktop hover:text-[var(--violet)]">Is Frontend Mentor free?</h2>
+                <img class="plus" src="assets/images/icon-plus.svg" alt="icon plus">
+                <img class="hidden minus" src="assets/images/icon-minus.svg" alt="icon minus">                
+            </button>
+            <div class="grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
+                <p class="text-[var(--purple-600)] text-body-mobile md:text-body-desktop overflow-hidden">The majority of our challenges are free, yes. We do have some that are premium and require a Pro subscription to access. It will say on each challenge whether they are free or premium, so it's easy to tell the difference.</p>
+            </div>  
+        </section>
+        <hr class="border-0 h-px bg-[var(--purple-100)]">
+        <section class="flex flex-col" id="section-three">
+            <button class="flex justify-between items-center cursor-pointer">
+                <h2 class="text-left text-[var(--purple-950)] text-subtitle-mobile md:text-subtitle-desktop hover:text-[var(--violet)]">Can I use Frontend Mentor projects in my portfolio?</h2>
+                <img class="plus" src="assets/images/icon-plus.svg" alt="icon plus">
+                <img class="minus hidden" src="assets/images/icon-minus.svg" alt="icon minus">                
+            </button>
+            <div class="grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
+                <p class="text-[var(--purple-600)] text-body-mobile md:text-body-desktop overflow-hidden">Definitely! Please do feel free to use whatever you build in your portfolio. Helping developers add professional-looking projects to their portfolio was one of the reasons we created this platform!</p>
+            </div>        
+        </section>
+        <hr class="border-0 h-px bg-[var(--purple-100)]">
+        <section class="flex flex-col" id="section-four">
+            <button class="flex justify-between items-center cursor-pointer">
+                <h2 class="text-left text-[var(--purple-950)] text-subtitle-mobile md:text-subtitle-desktop hover:text-[var(--violet)]">How can I get help if I'm stuck on a challenge?</h2>
+                <img class="plus" src="assets/images/icon-plus.svg" alt="icon plus">
+                <img class="hidden minus" src="assets/images/icon-minus.svg" alt="icon minus">                
+            </button>
+            <div class="grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
+                <p class="text-[var(--purple-600)] text-body-mobile md:text-body-desktop overflow-hidden">The best (and quickest) way to get help on a challenge is in our Discord server. There are thousands of other developers in there, so it's a great place to ask questions. We even have a dedicated "help" channel! If you haven't joined yet, you can get an invite to our Discord server here.</p>        
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
